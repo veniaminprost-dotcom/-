@@ -387,19 +387,23 @@ button {
 .hero__content {
   display: grid;
   gap: 1.25rem;
-  padding: 7rem 0 3rem;
+  padding: 7rem clamp(0.45rem, 2vw, 1.75rem) 3rem;
   color: #fff;
 }
 
 .hero__title {
-  font-size: clamp(2.5rem, 7vw, 5rem);
+  font-size: clamp(2.3rem, 6.2vw, 4.7rem);
   max-width: 11ch;
+  text-wrap: balance;
 }
 
 .hero__lead {
   max-width: 680px;
   font-size: 1.03rem;
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--color-text);
+  background: rgba(255, 250, 242, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.58);
+  box-shadow: 0 12px 28px rgba(62, 39, 35, 0.12);
 }
 
 .hero__highlights {
@@ -1207,11 +1211,12 @@ a.icon-card:focus-visible {
   }
 
   .hero__content {
-    padding: 6rem 0 2rem;
+    padding: 6rem clamp(0.35rem, 4vw, 0.9rem) 2rem;
   }
 
   .hero__title {
     max-width: 100%;
+    font-size: clamp(2rem, 9vw, 2.9rem);
   }
 
   .btn,
