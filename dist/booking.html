@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Бронирование — Фазановая лагуна</title>
+    <meta
+      name="description"
+      content="Узнайте свободные даты и отправьте заявку на бронирование дома в Фазановой лагуне через звонок, MAX или Telegram."
+    />
+    <meta property="og:title" content="Бронирование — Фазановая лагуна" />
+    <meta property="og:description" content="Простая форма бронирования и быстрый выбор способа связи." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/houses/house1-main.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <div class="container site-header__inner">
+        <a class="logo" href="index.html">
+          <span class="logo__title">Фазановая лагуна</span>
+          <span class="logo__subtitle">эко-дома в Морской Ривьере</span>
+        </a>
+        <nav class="site-nav" data-nav>
+          <button class="site-nav__toggle" type="button" aria-expanded="false" data-nav-toggle><span></span></button>
+          <div class="site-nav__menu">
+            <ul class="nav-list">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="story.html">Наша история</a></li>
+              <li><a href="houses.html">Дома</a></li>
+              <li><a href="services.html">Услуги</a></li>
+              <li><a href="gallery.html">Галерея</a></li>
+              <li><a href="booking.html">Бронирование</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero__wrap">
+          <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol class="breadcrumbs__list">
+              <li><a href="index.html">Главная</a></li>
+              <li>Бронирование</li>
+            </ol>
+          </nav>
+          <div class="page-hero__card reveal">
+            <span class="eyebrow">Бронирование</span>
+            <h1>Оставьте параметры поездки, а мы сразу переведём вас в удобный канал связи</h1>
+            <p>
+              После заполнения формы сайт не теряет заявку: вы выбираете, как продолжить общение —
+              звонком, в MAX или Telegram.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--compact">
+        <div class="container booking-grid">
+          <article class="booking-card reveal">
+            <h2>Форма бронирования</h2>
+            <form class="booking-form" data-booking-form data-booking-source="страницы бронирования">
+              <div class="form-grid">
+                <div class="field">
+                  <label for="house">Выбор дома</label>
+                  <select id="house" name="house" required>
+                    <option value="">Выберите дом</option>
+                    <option>Дом 1</option>
+                    <option>Дом 2</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="checkin">Дата заезда</label>
+                  <input id="checkin" name="checkin" type="date" required />
+                </div>
+                <div class="field">
+                  <label for="checkout">Дата выезда</label>
+                  <input id="checkout" name="checkout" type="date" required />
+                </div>
+                <div class="field">
+                  <label for="adults">Взрослые</label>
+                  <input id="adults" name="adults" type="number" min="1" value="2" required />
+                </div>
+                <div class="field">
+                  <label for="children">Дети</label>
+                  <input id="children" name="children" type="number" min="0" value="0" />
+                </div>
+                <div class="field">
+                  <label for="name">Имя</label>
+                  <input id="name" name="name" type="text" placeholder="Ваше имя" required />
+                </div>
+                <div class="field">
+                  <label for="phone">Телефон</label>
+                  <input id="phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required />
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" placeholder="example@mail.ru" />
+                </div>
+                <div class="field">
+                  <label for="messenger">Мессенджер</label>
+                  <select id="messenger" name="messenger">
+                    <option>MAX</option>
+                    <option>Telegram</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="comment">Комментарий</label>
+                  <textarea id="comment" name="comment" placeholder="Особые пожелания, дети, праздник, животные"></textarea>
+                </div>
+              </div>
+              <label class="checkbox">
+                <input type="checkbox" required />
+                <span>Согласен с правилами проживания и условиями обработки заявки</span>
+              </label>
+              <button class="btn btn--primary" type="submit">Отправить заявку</button>
+            </form>
+          </article>
+
+          <article class="booking-card reveal">
+            <h2>Информация о бронировании</h2>
+            <ul class="check-list">
+              <li>Депозит: 10 000 ₽, возвращается при выезде</li>
+              <li>Заезд: 14:00, выезд: 11:00</li>
+              <li>Гибкие условия для длительного проживания</li>
+              <li>Можно быстро перейти к звонку, MAX или Telegram</li>
+            </ul>
+            <div class="booking-choice-grid">
+              <div class="booking-choice">
+                <h3>Позвонить</h3>
+                <p>Подходит, если хотите получить ответ прямо сейчас.</p>
+                <a class="btn btn--call" href="tel:+79284507300">Позвонить нам</a>
+              </div>
+              <div class="booking-choice">
+                <h3>MAX</h3>
+                <p>После открытия MAX найдите Анну по номеру +7 928 450-73-00.</p>
+                <a class="btn btn--max" href="https://web.max.ru/">Написать в MAX</a>
+              </div>
+              <div class="booking-choice">
+                <h3>Telegram</h3>
+                <p>Хороший вариант, если предпочитаете переписку в Telegram.</p>
+                <a class="btn btn--telegram" href="https://t.me/anna_bikova">Написать в Telegram</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-bottom">© <span data-current-year></span> Фазановая лагуна.</div>
+      </div>
+    </footer>
+
+    <div class="floating-messenger">
+      <a href="https://web.max.ru/" aria-label="Открыть MAX"><img class="messenger-icon" src="assets/images/icons/max.png" alt="MAX" /></a>
+      <a href="https://t.me/anna_bikova" aria-label="Написать в Telegram"><img class="messenger-icon" src="assets/images/icons/telegram.svg" alt="Telegram" /></a>
+      <button class="back-to-top" type="button" data-back-to-top aria-label="Наверх">↑</button>
+    </div>
+
+    <div class="modal" data-booking-modal aria-hidden="true">
+      <div class="modal__backdrop" data-modal-backdrop></div>
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-modal-close aria-label="Закрыть">×</button>
+        <span class="eyebrow">Ваша заявка готова</span>
+        <h2>Продолжить бронирование удобным способом</h2>
+        <p>
+          Мы уже собрали параметры вашей поездки. Выберите, куда отправить заявку, чтобы мы быстро
+          подтвердили даты и стоимость.
+        </p>
+        <p class="pill" data-modal-summary></p>
+        <div class="booking-choice-grid">
+          <div class="booking-choice">
+            <h3>Позвонить</h3>
+            <a class="btn btn--call" href="tel:+79284507300" data-modal-phone>Позвонить нам</a>
+          </div>
+          <div class="booking-choice">
+            <h3>MAX</h3>
+            <p>После открытия MAX найдите Анну по номеру +7 928 450-73-00.</p>
+            <a class="btn btn--max" href="https://web.max.ru/" data-modal-max>Открыть MAX</a>
+          </div>
+          <div class="booking-choice">
+            <h3>Telegram</h3>
+            <a class="btn btn--telegram" href="https://t.me/anna_bikova" data-modal-telegram>Перейти в Telegram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
