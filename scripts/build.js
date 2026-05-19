@@ -14,6 +14,7 @@ const entries = [
   "contacts.html",
   "robots.txt",
   "sitemap.xml",
+  "850FD850-E66A-4135-B4F5-2A432975B7C6.txt",
   "assets"
 ];
 
