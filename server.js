@@ -2,7 +2,8 @@ const http = require("http");
 const fs = require("fs");
 const path = require("path");
 
-const root = __dirname;
+const distRoot = path.join(__dirname, "dist");
+const root = fs.existsSync(distRoot) ? distRoot : __dirname;
 const port = process.env.PORT || 3000;
 
 const types = {
