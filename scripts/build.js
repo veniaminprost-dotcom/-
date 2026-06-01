@@ -7,6 +7,9 @@ const dist = path.join(root, "dist");
 const entries = [
   "index.html",
   "houses.html",
+  "zhilye-u-morya-yeisk.html",
+  "arenda-doma-yeisk.html",
+  "banya-basseyn-yeisk.html",
   "gallery.html",
   "services.html",
   "story.html",
