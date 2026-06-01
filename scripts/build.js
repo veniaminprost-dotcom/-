@@ -19,6 +19,7 @@ const entries = [
   "robots.txt",
   "sitemap.xml",
   "850FD850-E66A-4135-B4F5-2A432975B7C6.txt",
+  "google372a27625b81f991.html",
   "yandex_b60eebb59cfc654a.html",
   "yandex_a1ac8ec7381b7128.html",
   "assets"
