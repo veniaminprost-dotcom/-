@@ -36,14 +36,14 @@ const server = http.createServer((req, res) => {
 
     fs.readFile(filePath, (readError, content) => {
       if (readError) {
-        fs.readFile(path.join(root, "index.html"), (fallbackError, fallback) => {
+        fs.readFile(path.join(root, "404.html"), (fallbackError, fallback) => {
           if (fallbackError) {
             res.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });
             res.end("Not found");
             return;
           }
 
-          res.writeHead(200, { "Content-Type": types[".html"] });
+          res.writeHead(404, { "Content-Type": types[".html"] });
           res.end(fallback);
         });
         return;
